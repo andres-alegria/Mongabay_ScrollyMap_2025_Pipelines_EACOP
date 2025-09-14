@@ -1,25 +1,25 @@
 const { REACT_APP_MAPBOX_ACCESS_TOKEN } = process.env;
 
 export default {
-  style: 'mapbox://styles/mongabay/cmdyt9fxl005a01qzb0d4das5',
+  style: 'mapbox://styles/mongabay/cmfgilapc000p01sd9z7878oo',
   accessToken: REACT_APP_MAPBOX_ACCESS_TOKEN,
   showMarkers: false,
   theme: 'mongabay',
   intro: {
-    title: 'M-Sand',
+    title: 'Clearing the Way',
     subtitle:
-      'When one ban triggers another crisis: how Kerala’s river sand mining ban is leading to more quarrying in the Western Ghats.',
-    date: 'Sept. 05 2025',
+      'Nearly 40% of the EACOP route is already carved through forests and villages despite community opposition.',
+    date: 'Sept. 16 2025',
     social: [
       {
         name: 'twitter',
         src: 'twitter.svg',
-        href: 'https://x.com/MongabayIndia',
+        href: 'https://x.com/Mongabay',
       },
       {
         name: 'facebook',
         src: 'facebook.svg',
-        href: 'https://www.facebook.com/MongabayIndia/',
+        href: 'https://www.facebook.com/Mongabay/',
       },
     ],
   },
@@ -28,480 +28,348 @@ export default {
       name: 'mongabay',
       src: 'mongabaylogo.png',
       width: '140',
-      href: 'https://india.mongabay.com',
-    },
-    {
-      name: 'vizzuality',
-      src: 'vizzualitylogo.png',
-      width: '100',
-      href: 'https://vizzuality.com',
+      href: 'https://news.mongabay.com',
     },
   ],
   alignment: 'left',
   footer: 'Cartography by Andrés Alegría for Mongabay.',
   chapters: [
+
+    // chapter 1
     {
       id: 'first chapter',
       alignment: 'left',
       hidden: false,
-      title: 'Placeholder text',
-      description:
-        'Placeholder text.',
-      legend: [
+      title: 'The Cardamoms',
+       images: [
         {
-          title: 'Placeholder text',
-          icon: 'plane',
+          src: 'Photo1.jpg',
+          position: 'top',
+          title: 'Dam construction in Pursat',
+          author: 'Image provided by source',
         },
       ],
-      sources:
-        "Placeholder text.",
+      description:
+        "Despite being one of the best-preserved forest landscapes still standing in Cambodia, the Cardamoms’ lush rainforests face increasing threats, largely in the form of hydropower projects.",
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 30.0,
-        bearing: 60,
+        center: [104.5, 12.0],
+        zoom: 4.5,
+        pitch: 0.0,
+        bearing: 0,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'peruvian-amazon-20241002t1750-dlalbv copy',
-          opacity: 0.5,
+          layer: 'redd-cambodia',
+          opacity: 1,
         },
-        {
-          layer: 'airstrips-10224-dozgmq',
+                  {
+          layer: 'protectedareas-cambodia2023-9x3vt5',
           opacity: 1,
         },
         {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
+          layer: 'Satelitte_August_12_2025',
           opacity: 0,
         },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
+             {
+          layer: 'satellite color',
           opacity: 0,
         },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
-        },
+      
       ],
       onChapterExit: [
+           {
+          layer: 'redd-cambodia',
+          opacity: 1,
+        },
+                  {
+          layer: 'protectedareas-cambodia2023-9x3vt5',
+          opacity: 1,
+        },
         {
-          layer: 'peruvian-amazon-20241002t1750-dlalbv copy',
+          layer: 'Satelitte_August_12_2025',
           opacity: 0,
         },
       ],
     },
+    
+    // chapter 2
     {
       id: 'second-chapter',
       alignment: 'right',
       hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
+      title: "Dams",
       description:
-        'Placeholder text.',
+        "Dams have been built and more are under construction within protected forests in Cambodia’s Cardamom Mountains, with five hydropower dams already operational and others in various stages of development, including projects like Irrigation Dam 2 in Pursat province.",
       legend: [
         {
-          title: 'Placeholder text',
-          icon: 'coca',
+          title: 'Samkos REDD+ project area',
+          pattern: { angle: 120, thickness: 2, gap: 6, bg: '#fafafa' },
+          color: '#bde2af',
+        },
+           {
+          title: 'Protected Areas',
+          color: '#006a54',
         },
       ],
-      sources: "Placeholder text",
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
+        center: [103.700, 12.160],
+        zoom: 8.25,
         pitch: 40.0,
-        bearing: 60,
+        bearing: 25,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 1,
+          layer: 'Satelitte_August_12_2025',
+          opacity: 0,
         },
-        {
-          layer: 'airstrips-10224-dozgmq',
-          opacity: 1,
+                  {
+          layer: 'satellite color',
+          opacity: 0,
         },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
+                       {
+          layer: 'Project Area line',
+          opacity: 0,
+        },
+               {
+          layer: 'Rokat commune line',
+          opacity: 0,
+        },
+                     {
+          layer: 'Rokat commune',
           opacity: 0,
         },
       ],
       onChapterExit: [
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+           {
+          layer: 'Satelitte_August_12_2025',
           opacity: 0,
         },
       ],
     },
+    
+    // chapter 3
     {
       id: 'third-chapter',
-      alignment: 'fully',
+      alignment: 'right',
       hidden: false,
-      title: 'Placeholder text',
+      title: 'Overlaps',
       description:
-          'Placeholder text.',
+          "Irrigation Dam 2’s project area lies within Pursat province's Rokat commune, but is also set to clear protected forest within the Samkos REDD+ project area.",
       legend: [
         {
-          title: 'Placeholder text',
-          color: '#de6363',
-          pattern: 'LINEPATTERN',
+          title: 'Irrigation Dam 2 project area',
+          border: '#de595b',
+        },
+        {
+          title: 'Rokat commune',
+          color: '#e6a444',
         },
       ],
-      sources: 'Placeholder text',
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 20.0,
-        bearing: 60,
+        center: [103.700, 12.160],
+        zoom: 10.25,
+        pitch: 40.0,
+        bearing: 25,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
+                       {
+          layer: 'Project Area line',
           opacity: 1,
         },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 0.75,
-        },
-      ],
-    },
-    {
-      id: 'fourth-chapter',
-      alignment: 'fully',
-      hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
-      description:
-        'Placeholder text.',
-      legend: [
-        {
-          title: 'Placeholder text',
-          color: '#ccefb8',
-        },
-      ],
-      sources: 'Placeholder text',
-      location: {
-        center: [77.20, 10.75],
-        zoom: 7.5,
-        pitch: 30.0,
-        bearing: 60,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
+               {
+          layer: 'Rokat commune line',
           opacity: 1,
         },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+                     {
+          layer: 'Rokat commune',
           opacity: 0.5,
         },
+        {
+          layer: 'Satelitte_August_12_2025',
+          opacity: 0,
+        },
+                         {
+          layer: 'satellite color',
+          opacity: 0,
+        },
       ],
-      onChapterExit: [],
+      onChapterExit: [
+           {
+          layer: 'Satelitte_August_12_2025',
+          opacity: 0,
+        },
+      ],
     },
+
+    // chapter 4a
     {
-      id: 'fifth-chapter',
-      alignment: 'fully',
+      id: 'fourth-chapter',
+      alignment: 'right',
       hidden: false,
-      title: 'Placeholder text',
+      title: 'Satellite imagery, before',
       description:
-        'Placeholder text.',
+        'Project area before the construction phase.',
+      legend: [
+      ],
+      sources: 'Mapbox',
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 60.0,
-        bearing: 50,
+        center: [103.700, 12.160],
+        zoom: 12.5,
+        pitch: 0,
+        bearing: 25,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 1,
+          layer: 'Satelitte_August_12_2025',
+          opacity: 0,
         },
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: .5,
+          layer: 'redd-cambodia',
+          opacity: 0,
+        },
+                         {
+          layer: 'satellite color',
+          opacity: 1,
         },
       ],
       onChapterExit: [
         {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+          layer: 'satellite color',
           opacity: 0,
         },
       ],
     },
+
+    // chapter 4b
+    {
+      id: 'fourth-chapter-B',
+      alignment: 'right',
+      hidden: false,
+      title: 'Satellite imagery, after',
+      description:
+        'Satellite imagery appears to show a roughly 10-kilometer (6-mile) road being carved through the forest to the dam site between February and March 2025, followed by some 60 hectares of forest clearance taking place within the project area through at least Aug. 12.',
+      legend: [
+      ],
+      sources: 'Copernicus',
+      location: {
+        center: [103.700, 12.160],
+        zoom: 12.5,
+        pitch: 0,
+        bearing: 25,
+      },
+      mapAnimation: 'flyTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+        {
+          layer: 'Satelitte_August_12_2025',
+          opacity: 1,
+        },
+        {
+          layer: 'redd-cambodia',
+          opacity: 0,
+        },
+                         {
+          layer: 'satellite color',
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+        {
+          layer: 'Satelitte_August_12_2025',
+          opacity: 0.25,
+        },
+      ],
+    },
+    
+    // chapter 5
+    {
+      id: 'fifth-chapter',
+      alignment: 'right',
+      hidden: false,
+      title: 'Restricted water flow',
+      description:
+        'The dam is being built on the Arai River, the largest natural source of water for upwards of 40 families in Rokat commune who use it for everything from cooking, bathing and drinking to irrigating crops and sustaining livestock. It is also a key tributary of the Pursat River, which in turn empties into the Tonle Sap Lake.',
+      location: {
+        center: [103.700, 12.160],
+        zoom: 9.25,
+        pitch: 0,
+        bearing: 25,
+      },
+      mapAnimation: 'flyTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+        {
+          layer: 'Satelitte_August_12_2025',
+          opacity: 0,
+        },
+                         {
+          layer: 'satellite color',
+          opacity: 0,
+        },
+      ],
+      onChapterExit: [
+             {
+          layer: 'Satelitte_August_12_2025',
+          opacity: 0,
+        },
+      ],
+    },
+    
+    // chapter 6
     {
       id: 'sixth-chapter',
       alignment: 'left',
       hidden: false,
-      title: 'Placeholder text',
+      title: 'Tonle Sap Lake',
       images: [
         {
-          src: 'Photo1.jpg',
+          src: 'photo2.jpg',
           position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
+          title: 'Artisanal fisher',
         },
       ],
       description:
-        'Placeholder text.',
+        "The proliferation of irrigation dams and other barriers across the river’s catchment area has restricted the access of fish to and from the Tonle Sap Lake, Southeast Asia’s largest freshwater lake. Irrigation Dam 2 looks set to exacerbate these conditions, restricting the river flows and cutting off riverine communities.",
       location: {
-        center: [77.20, 10.75],
-        zoom: 6.5,
-        pitch: 30.0,
-        bearing: 50,
+        center: [104.070, 12.900],
+        zoom: 9.25,
+        pitch: 0,
+        bearing: 25,
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 1,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 1,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
-      id: 'seventh-chapter',
-      alignment: 'right',
-      hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'APlaceholder text',
-          author: 'Placeholder text',
-        },
-      ],
-      description:
-        'Placeholder text.',
-      location: {
-        center: [77.20, 10.75],
-        zoom: 4.5,
-        pitch: 30.0,
-        bearing: 60,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 1,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 1,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0,
-        }
-      ],
-      onChapterExit: [
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
+          layer: 'Satelitte_August_12_2025',
           opacity: 0,
         },
-      ],
-    },
-    {
-      id: 'eighth-chapter',
-      alignment: 'fully',
-      hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
-      description:
-        'Placeholder text.',
-      legend: [
-        {
-          title: 'Placeholder text',
-          color: '#66f7ff',
-        },
-      ],
-      sources: "Placeholder text",
-      location: {
-        center: [77.20, 10.75],
-        zoom: 4.5,
-        pitch: 60.0,
-        bearing: 30,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
+                         {
+          layer: 'satellite color',
           opacity: 0,
-        },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
-      id: 'ninth-chapter',
-      alignment: 'right',
-      hidden: false,
-      title: 'Placeholder text',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
-      description:
-        'Placeholder text.',
-      location: {
-        center: [77.20, 10.75],
-        zoom: 5.5,
-        pitch: 20.0,
-        bearing: 40,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'deforestationthreeregions-dcthbg',
-          opacity: 0,
-        },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0.75,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [],
-    },
-    {
-      id: 'tenth-identifier',
-      alignment: 'fully',
-      hidden: false,
-      title: 'Rivers and roads',
-      images: [
-        {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Placeholder text',
-          author: 'Placeholder text',
-        },
-      ],
-      description:
-        'Placeholder text.',
-      location: {
-        center: [77.20, 10.15],
-        zoom: 6.5,
-        pitch: 20.0,
-        bearing: 30,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 1,
-        },
-        {
-          layer: 'airstrips-10224-dozgmq',
-          opacity: 1,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-          opacity: 0.75,
-        },
-        {
-          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-          opacity: 0.75,
-        },
-        {
-          layer: 'territorios-indigenas-0lu5ni copy',
-          opacity: 1,
         },
       ],
       onChapterExit: [
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
+             {
+          layer: 'Satelitte_August_12_2025',
           opacity: 0,
         },
       ],
     },
+    
   ],
 };
