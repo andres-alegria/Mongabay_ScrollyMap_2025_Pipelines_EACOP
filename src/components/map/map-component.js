@@ -36,12 +36,19 @@ const Map = (props) => {
   useHandleResize(updateViewport);
 
   // Set map when loaded
-  useEffect(() => {
-    if (loaded && mapRef.current) {
-      setMap(mapRef.current.getMap());
+ useEffect(() => {
+  if (loaded && mapRef.current) {
+    const m = mapRef.current.getMap();
+    setMap(m);
+    // Expose globally so the legend can read paint props
+    if (typeof window !== 'undefined') {
+      window.__MAP__ = m;
+      // Keep the reference fresh if the style changes
+      m.on('styledata', () => { window.__MAP__ = m; });
     }
-    return undefined;
-  }, [mapRef, loaded, setMap]);
+  }
+  return undefined;
+}, [mapRef, loaded, setMap]);
 
   useScrollFunctionality({
     loaded,

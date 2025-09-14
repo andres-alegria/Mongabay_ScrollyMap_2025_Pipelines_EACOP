@@ -37,339 +37,269 @@ export default {
 
     // chapter 1
     {
-      id: 'first chapter',
+      id: 'chapter 1',
       alignment: 'left',
       hidden: false,
-      title: 'The Cardamoms',
-       images: [
+      title: 'Through the Safety Net',
+      description: "Oil pipeline expansion is putting the planet’s last biodiversity strongholds—and many Indigenous lands—at risk.",
+       legend: [
         {
-          src: 'Photo1.jpg',
-          position: 'top',
-          title: 'Dam construction in Pursat',
-          author: 'Image provided by source',
+          title: 'Global network of oil/gas pipelines',
+          fromLayer: 'Pipelines existing',
         },
       ],
-      description:
-        "Despite being one of the best-preserved forest landscapes still standing in Cambodia, the Cardamoms’ lush rainforests face increasing threats, largely in the form of hydropower projects.",
       location: {
-        center: [104.5, 12.0],
-        zoom: 4.5,
+        center: [31.5, 1.25],
+        zoom: 1.8,
         pitch: 0.0,
         bearing: 0,
       },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'redd-cambodia',
-          opacity: 1,
-        },
-                  {
-          layer: 'protectedareas-cambodia2023-9x3vt5',
-          opacity: 1,
-        },
-        {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-             {
-          layer: 'satellite color',
-          opacity: 0,
-        },
-      
-      ],
-      onChapterExit: [
-           {
-          layer: 'redd-cambodia',
-          opacity: 1,
-        },
-                  {
-          layer: 'protectedareas-cambodia2023-9x3vt5',
-          opacity: 1,
-        },
-        {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-      ],
-    },
-    
-    // chapter 2
-    {
-      id: 'second-chapter',
-      alignment: 'right',
-      hidden: false,
-      title: "Dams",
-      description:
-        "Dams have been built and more are under construction within protected forests in Cambodia’s Cardamom Mountains, with five hydropower dams already operational and others in various stages of development, including projects like Irrigation Dam 2 in Pursat province.",
-      legend: [
-        {
-          title: 'Samkos REDD+ project area',
-          pattern: { angle: 120, thickness: 2, gap: 6, bg: '#fafafa' },
-          color: '#bde2af',
-        },
-           {
-          title: 'Protected Areas',
-          color: '#006a54',
-        },
-      ],
-      location: {
-        center: [103.700, 12.160],
-        zoom: 8.25,
-        pitch: 40.0,
-        bearing: 25,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-                  {
-          layer: 'satellite color',
-          opacity: 0,
-        },
-                       {
-          layer: 'Project Area line',
-          opacity: 0,
-        },
-               {
-          layer: 'Rokat commune line',
-          opacity: 0,
-        },
-                     {
-          layer: 'Rokat commune',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-           {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-      ],
-    },
-    
-    // chapter 3
-    {
-      id: 'third-chapter',
-      alignment: 'right',
-      hidden: false,
-      title: 'Overlaps',
-      description:
-          "Irrigation Dam 2’s project area lies within Pursat province's Rokat commune, but is also set to clear protected forest within the Samkos REDD+ project area.",
-      legend: [
-        {
-          title: 'Irrigation Dam 2 project area',
-          border: '#de595b',
-        },
-        {
-          title: 'Rokat commune',
-          color: '#e6a444',
-        },
-      ],
-      location: {
-        center: [103.700, 12.160],
-        zoom: 10.25,
-        pitch: 40.0,
-        bearing: 25,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-                       {
-          layer: 'Project Area line',
-          opacity: 1,
-        },
-               {
-          layer: 'Rokat commune line',
-          opacity: 1,
-        },
-                     {
-          layer: 'Rokat commune',
-          opacity: 0.5,
-        },
-        {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-                         {
-          layer: 'satellite color',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-           {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-      ],
-    },
-
-    // chapter 4a
-    {
-      id: 'fourth-chapter',
-      alignment: 'right',
-      hidden: false,
-      title: 'Satellite imagery, before',
-      description:
-        'Project area before the construction phase.',
-      legend: [
-      ],
-      sources: 'Mapbox',
-      location: {
-        center: [103.700, 12.160],
-        zoom: 12.5,
-        pitch: 0,
-        bearing: 25,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-        {
-          layer: 'redd-cambodia',
-          opacity: 0,
-        },
-                         {
-          layer: 'satellite color',
-          opacity: 1,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: 'satellite color',
-          opacity: 0,
-        },
-      ],
-    },
-
-    // chapter 4b
-    {
-      id: 'fourth-chapter-B',
-      alignment: 'right',
-      hidden: false,
-      title: 'Satellite imagery, after',
-      description:
-        'Satellite imagery appears to show a roughly 10-kilometer (6-mile) road being carved through the forest to the dam site between February and March 2025, followed by some 60 hectares of forest clearance taking place within the project area through at least Aug. 12.',
-      legend: [
-      ],
-      sources: 'Copernicus',
-      location: {
-        center: [103.700, 12.160],
-        zoom: 12.5,
-        pitch: 0,
-        bearing: 25,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 1,
-        },
-        {
-          layer: 'redd-cambodia',
-          opacity: 0,
-        },
-                         {
-          layer: 'satellite color',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-        {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0.25,
-        },
-      ],
-    },
-    
-    // chapter 5
-    {
-      id: 'fifth-chapter',
-      alignment: 'right',
-      hidden: false,
-      title: 'Restricted water flow',
-      description:
-        'The dam is being built on the Arai River, the largest natural source of water for upwards of 40 families in Rokat commune who use it for everything from cooking, bathing and drinking to irrigating crops and sustaining livestock. It is also a key tributary of the Pursat River, which in turn empties into the Tonle Sap Lake.',
-      location: {
-        center: [103.700, 12.160],
-        zoom: 9.25,
-        pitch: 0,
-        bearing: 25,
-      },
-      mapAnimation: 'flyTo',
-      rotateAnimation: false,
-      callback: '',
-      onChapterEnter: [
-        {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-                         {
-          layer: 'satellite color',
-          opacity: 0,
-        },
-      ],
-      onChapterExit: [
-             {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
-        },
-      ],
-    },
-    
-    // chapter 6
-    {
-      id: 'sixth-chapter',
-      alignment: 'left',
-      hidden: false,
-      title: 'Tonle Sap Lake',
       images: [
         {
-          src: 'photo2.jpg',
+          src: 'Photo1.jpg',
           position: 'top',
-          title: 'Artisanal fisher',
+          title: 'Pipeline',
+          author: 'Placeholder photo',
         },
       ],
-      description:
-        "The proliferation of irrigation dams and other barriers across the river’s catchment area has restricted the access of fish to and from the Tonle Sap Lake, Southeast Asia’s largest freshwater lake. Irrigation Dam 2 looks set to exacerbate these conditions, restricting the river flows and cutting off riverine communities.",
-      location: {
-        center: [104.070, 12.900],
-        zoom: 9.25,
-        pitch: 0,
-        bearing: 25,
-      },
-      mapAnimation: 'flyTo',
+      mapAnimation: 'easeTo',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
         {
-          layer: 'Satelitte_August_12_2025',
+          layer: 'Satellite_2025',
           opacity: 0,
         },
-                         {
-          layer: 'satellite color',
+                  {
+          layer: 'Satellite_2023',
           opacity: 0,
         },
+        {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-climate-stabilization_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-climate-stabilization',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-potential-corridors_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-potential-corridors',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025 color',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals_color',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 0,
+        },
+          {
+          layer: 'admin-0-boundary-disputed',
+          opacity: 0,
+        },  
+          {
+          layer: 'admin-0-boundary-a',
+          opacity: 0,
+        },  
+          {
+          layer: 'admin-0-boundary-b',
+          opacity: 0,
+        },  
       ],
-      onChapterExit: [
+        onChapterExit: [
+          {
+          layer: 'admin-0-boundary-a',
+          opacity: 1,
+        },  
+          {
+          layer: 'admin-0-boundary-b',
+          opacity: 1,
+        },  
+      ],
+    
+    },
+
+    // chapter 2
+    {
+      id: 'chapter 2',
+      alignment: 'left',
+      hidden: false,
+      title: 'EACOP',
+      description: "The East African Crude Oil Pipeline (EACOP), also known as Uganda–Tanzania Crude Oil Pipeline or Hoima–Tanga Port Oil Pipeline, is a proposed oil pipeline in East Africa.",
+             legend: [
+        {
+          title: 'Existing pipelines',
+          fromLayer: 'Pipelines existing',
+        },
              {
-          layer: 'Satelitte_August_12_2025',
-          opacity: 0,
+          title: 'Under construction or proposed pipelines',
+          fromLayer: 'Pipelines under construction',
+        },
+         ],
+      location: {
+        center: [36.0, -2.8],
+        zoom: 4.2,
+        pitch: 0.0,
+        bearing: 0,
+      },
+     
+      mapAnimation: 'easeTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+      ],
+        onChapterExit: [
+      ],
+    
+    },
+
+
+    // chapter 3
+    {
+      id: 'chapter 3',
+      alignment: 'left',
+      hidden: false,
+      title: 'Where pipelines meet critical ecosystems',
+      description: "The Global Safety Net is composed of five main layers for protecting biodiversity and climate: Species Rarity Sites, High Biodiversity Areas, Large Mammal Landscapes, Intact Wilderness, and Climate Stabilization Areas. These layers identify and map critical areas of the Earth's terrestrial surface that require intensified conservation efforts to address both biodiversity loss and climate change. Overlaying oil infrastructure with these critical habitats and Indigenous homelands reveals risks of cascading fragmentation.",
+             legend: [
+        {
+          title: 'Global Safety Net',
+          color: '#006a54',
+        },
+         ],
+      location: {
+        center: [36.0, -2.8],
+        zoom: 5.6,
+        pitch: 0.0,
+        bearing: 0,
+      },
+     
+      mapAnimation: 'easeTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+        {
+          layer: 'GSN-climate-stabilization',
+          opacity: 1,
+        },
+        {
+          layer: 'GSN-potential-corridors',
+          opacity: 1,
+        },
+        {
+          layer: 'wdpas-2025',
+          opacity: 1,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 1,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 1,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 1,
         },
       ],
+        onChapterExit: [
+      ],
+    
     },
     
+    // chapter 4
+    {
+      id: 'chapter 4',
+      alignment: 'left',
+      hidden: false,
+      title: 'Protected areas',
+      description: "EACOP’s construction threatens 44 protected areas within Uganda and Tanzania.",
+             legend: [
+        {
+          title: 'Protected areas',
+          color: '#bdeaaf',
+        },
+         ],
+      location: {
+        center: [36.0, -2.8],
+        zoom: 5.6,
+        pitch: 0.0,
+        bearing: 0,
+      },
+     
+      mapAnimation: 'easeTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+         {
+          layer: 'GSN-climate-stabilization',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-potential-corridors',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 0,
+        },
+      ],
+        onChapterExit: [
+          {
+          layer: 'wdpas-2025 color',
+          opacity: 1,
+        },
+      ],
+    
+    },
+    
+    
+
   ],
 };
