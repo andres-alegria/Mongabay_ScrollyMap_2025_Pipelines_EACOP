@@ -67,6 +67,10 @@ export default {
       callback: '',
       onChapterEnter: [
         {
+          layer: 'Pipeline_icons',
+          opacity: 0,
+        },
+        {
           layer: 'Satellite_2025',
           opacity: 0,
         },
@@ -313,11 +317,15 @@ export default {
      // fromLayer: 'wdpas-2025-Murchison',
             border: '#c3a7c5',
         },
-        {
-          title: 'Tilenga Feeder Pipeline Trajectory',
-          icon: 'pipeline',
-        },
          ],
+  images: [
+        {
+          src: 'Photo2.jpg',
+          position: 'top',
+          title: 'Rothschild-Giraffes',
+          author: 'Murchison Falls',
+        },
+      ],         
       location: {
         center: [31.506, 2.166],
         zoom: 10.75,
@@ -347,29 +355,29 @@ export default {
           layer: 'Satellite_2025',
           opacity: 0,
         },
+             {
+          layer: 'Pipeline_icons',
+          opacity: 0,
+        },
       ],
     
     },
     
       
     // chapter 6
-    {
+
+ {
       id: 'chapter 6',
       alignment: 'left',
       hidden: false,
-      title: 'Tracks in a National Treasure',
-      description: "38 kilometers of roads and nine well pads have been cleared or constructed inside Murchison Falls National Park, Uganda's oldest and largest national park, home to elephants, lions, hippos, and numerous endemic species.",
-             legend: [,
-     {
-          title: 'Murchison Falls National Park',
-     // fromLayer: 'wdpas-2025-Murchison',
-            border: '#c3a7c5',
-        },
+      title: 'July 2025',
+             legend: [
         {
           title: 'Tilenga Feeder Pipeline Trajectory',
           icon: 'pipeline',
         },
          ],
+      sources: 'Satellite image from Copernicus',
       location: {
         center: [31.506, 2.166],
         zoom: 10.75,
@@ -378,16 +386,27 @@ export default {
       },
      
       mapAnimation: 'easeTo',
-      callback: 'mfnpSequence',
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
+                          {
+          layer: 'wdpas-2025 color',
+          opacity: 0,
+        },
+                 {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 1,
+        },
                   {
           layer: 'Satellite_2023',
           opacity: 0,
         },
       ],
         onChapterExit: [
+                      {
+          layer: 'Pipeline_icons',
+          opacity: 1,
+        },
                  {
           layer: 'Satellite_2025',
           opacity: 1,
@@ -395,6 +414,10 @@ export default {
       ],
     
     },
+       
+   
+   
+   
 
   ],
 };

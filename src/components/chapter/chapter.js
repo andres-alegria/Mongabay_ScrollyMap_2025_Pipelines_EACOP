@@ -85,6 +85,7 @@ function Chapter({
   alignment,
   setCurrentChapter,
   setCurrentAction,
+   pinned,
 }) {
   const { t } = useTranslation();
 
@@ -169,7 +170,7 @@ function Chapter({
         topOffset="-20%"
         bottomOffset="40%"
       />
-      <div ref={chapterRef} className={cx(theme, 'rounded-lg p-6 space-y-4', extraHeight)}>
+      <div ref={chapterRef} className={cx(theme, 'rounded-lg p-6 space-y-4', pinned && 'lg:sticky lg:top-[10vh] z-10', extraHeight)}>
         {images &&
           images.filter((i) => i.position === 'top').map((i) => renderImage(i))}
         {title && (
