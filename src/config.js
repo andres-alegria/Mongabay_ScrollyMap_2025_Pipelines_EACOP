@@ -246,7 +246,7 @@ export default {
       id: 'chapter 4',
       alignment: 'left',
       hidden: false,
-      title: 'Protected areas',
+      title: 'Protected areas under threat',
       description: "EACOP’s construction threatens 44 protected areas within Uganda and Tanzania.",
              legend: [
         {
@@ -299,7 +299,102 @@ export default {
     
     },
     
+        
+    // chapter 5
+    {
+      id: 'chapter 5',
+      alignment: 'left',
+      hidden: false,
+      title: 'Tracks in a National Treasure',
+      description: "38 kilometers of roads and nine well pads have been cleared or constructed inside Murchison Falls National Park, Uganda's oldest and largest national park, home to elephants, lions, hippos, and numerous endemic species.",
+             legend: [
+        {
+          title: 'Murchison Falls National Park',
+     // fromLayer: 'wdpas-2025-Murchison',
+            border: '#c3a7c5',
+        },
+        {
+          title: 'Tilenga Feeder Pipeline Trajectory',
+          icon: 'pipeline',
+        },
+         ],
+      location: {
+        center: [31.506, 2.166],
+        zoom: 10.75,
+        pitch: 0.0,
+        bearing: 0,
+      },
+     
+      mapAnimation: 'easeTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+                          {
+          layer: 'wdpas-2025 color',
+          opacity: 0,
+        },
+                 {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 1,
+        },
+                  {
+          layer: 'Satellite_2023',
+          opacity: 1,
+        },
+      ],
+        onChapterExit: [
+                 {
+          layer: 'Satellite_2025',
+          opacity: 0,
+        },
+      ],
     
+    },
+    
+      
+    // chapter 6
+    {
+      id: 'chapter 6',
+      alignment: 'left',
+      hidden: false,
+      title: 'Tracks in a National Treasure',
+      description: "38 kilometers of roads and nine well pads have been cleared or constructed inside Murchison Falls National Park, Uganda's oldest and largest national park, home to elephants, lions, hippos, and numerous endemic species.",
+             legend: [,
+     {
+          title: 'Murchison Falls National Park',
+     // fromLayer: 'wdpas-2025-Murchison',
+            border: '#c3a7c5',
+        },
+        {
+          title: 'Tilenga Feeder Pipeline Trajectory',
+          icon: 'pipeline',
+        },
+         ],
+      location: {
+        center: [31.506, 2.166],
+        zoom: 10.75,
+        pitch: 0.0,
+        bearing: 0,
+      },
+     
+      mapAnimation: 'easeTo',
+      callback: 'mfnpSequence',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+                  {
+          layer: 'Satellite_2023',
+          opacity: 0,
+        },
+      ],
+        onChapterExit: [
+                 {
+          layer: 'Satellite_2025',
+          opacity: 1,
+        },
+      ],
+    
+    },
 
   ],
 };

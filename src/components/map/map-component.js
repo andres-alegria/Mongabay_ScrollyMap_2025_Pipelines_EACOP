@@ -42,13 +42,34 @@ const Map = (props) => {
     setMap(m);
     // Expose globally so the legend can read paint props
     if (typeof window !== 'undefined') {
-      window.__MAP__ = m;
-      // Keep the reference fresh if the style changes
-      m.on('styledata', () => { window.__MAP__ = m; });
-    }
+  window.__MAP__ = m;
+  window.map = m; // ← ADD THIS LINE
+
+  // Keep the reference fresh if the style changes
+  m.on('styledata', () => {
+    window.__MAP__ = m;
+    window.map = m; // ← keep it fresh on style changes too
+  });
+}
+
+
   }
   return undefined;
 }, [mapRef, loaded, setMap]);
+
+useEffect(() => {
+  if (!loaded || !map) return;
+
+  const chapter =
+    typeof currentChapterId === 'string'
+      ? chapters.find(c => c.id === currentChapterId)
+      : currentChapterId;
+
+  if (chapter?.callback && typeof window[chapter.callback] === 'function') {
+    window[chapter.callback](); // run your multi-step camera sequence
+  }
+}, [loaded, map, currentChapterId, chapters]);
+
 
   useScrollFunctionality({
     loaded,
