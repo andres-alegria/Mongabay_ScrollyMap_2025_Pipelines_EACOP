@@ -309,8 +309,8 @@ export default {
       id: 'chapter 5',
       alignment: 'left',
       hidden: false,
-      title: 'Tracks in a National Treasure',
-      description: "38 kilometers of roads and nine well pads have been cleared or constructed inside Murchison Falls National Park, Uganda's oldest and largest national park, home to elephants, lions, hippos, and numerous endemic species.",
+      title: 'National Treasure',
+      description: "Murchison Falls National Park is Uganda's oldest and largest national park, home to elephants, lions, giraffes, and numerous endemic species.",
              legend: [
         {
           title: 'Murchison Falls National Park',
@@ -370,8 +370,9 @@ export default {
       id: 'chapter 6',
       alignment: 'left',
       hidden: false,
-      title: 'July 2025',
-             legend: [
+      title: 'Tracks inside',
+      description: "By July 2025, 38 kilometers of roads and nine well pads have been cleared or constructed inside Murchison Falls National Park.",
+           legend: [
         {
           title: 'Tilenga Feeder Pipeline Trajectory',
           icon: 'pipeline',
