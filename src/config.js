@@ -318,7 +318,14 @@ export default {
             border: '#c3a7c5',
         },
          ],
-        
+  images: [
+        {
+          src: 'Photo2.jpg', 
+          position: 'top',
+          title: 'Rothschild-Giraffes',
+          author: 'Murchison Falls',
+        },
+      ],         
       location: {
         center: [31.506, 2.166],
         zoom: 10.75,
