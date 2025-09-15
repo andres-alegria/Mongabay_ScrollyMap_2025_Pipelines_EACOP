@@ -320,7 +320,7 @@ export default {
          ],
   images: [
         {
-          src: 'Photo2.jpg',
+          src: 'Photo2.jpg', 
           position: 'top',
           title: 'Rothschild-Giraffes',
           author: 'Murchison Falls',
