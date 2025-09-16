@@ -245,6 +245,10 @@ export default {
         },
       ],
         onChapterExit: [
+{
+          layer: 'wdpas-2025 color threatend',
+          opacity: 1,
+        },
       ],
     
     },
@@ -299,10 +303,6 @@ export default {
         },
       ],
         onChapterExit: [
-          {
-          layer: 'wdpas-2025 color threatend',
-          opacity: 1,
-        },
       ],
     
     },
