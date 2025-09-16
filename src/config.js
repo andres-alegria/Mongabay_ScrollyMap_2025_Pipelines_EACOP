@@ -142,6 +142,10 @@ export default {
           layer: 'admin-0-boundary-b',
           opacity: 0,
         },  
+         {
+          layer: 'wdpas-2025 color threatend',
+          opacity: 0,
+        },
       ],
         onChapterExit: [
           {
@@ -296,7 +300,7 @@ export default {
       ],
         onChapterExit: [
           {
-          layer: 'wdpas-2025 color',
+          layer: 'wdpas-2025 color threatend',
           opacity: 1,
         },
       ],
