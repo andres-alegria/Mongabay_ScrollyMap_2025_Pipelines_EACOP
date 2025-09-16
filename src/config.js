@@ -82,8 +82,8 @@ export default {
           layer: 'wdpas-2025-Murchison',
           opacity: 0,
         },
-        {
-          layer: 'GSN-climate-stabilization_color',
+               {
+          layer: 'wdpas-2025-Murchison fill',
           opacity: 0,
         },
         {
@@ -91,15 +91,7 @@ export default {
           opacity: 0,
         },
         {
-          layer: 'GSN-potential-corridors_color',
-          opacity: 0,
-        },
-        {
           layer: 'GSN-potential-corridors',
-          opacity: 0,
-        },
-        {
-          layer: 'wdpas-2025 color',
           opacity: 0,
         },
         {
@@ -107,23 +99,11 @@ export default {
           opacity: 0,
         },
         {
-          layer: 'GSN-intact-wilderness-areas_color',
-          opacity: 0,
-        },
-        {
           layer: 'GSN-intact-wilderness-areas',
           opacity: 0,
         },
         {
-          layer: 'GSN-high-biodiversity_color',
-          opacity: 0,
-        },
-        {
           layer: 'GSN-high-biodiversity',
-          opacity: 0,
-        },
-        {
-          layer: 'GSN-large-mammals_color',
           opacity: 0,
         },
         {
@@ -160,6 +140,7 @@ export default {
     
     },
 
+
     // chapter 2
     {
       id: 'chapter 2',
@@ -188,8 +169,68 @@ export default {
       rotateAnimation: false,
       callback: '',
       onChapterEnter: [
+                  {
+          layer: 'admin-0-boundary-a',
+          opacity: 1,
+        },  
+          {
+          layer: 'admin-0-boundary-b',
+          opacity: 1,
+        },  
       ],
         onChapterExit: [
+        {
+          layer: 'Pipeline_icons',
+          opacity: 0,
+        },
+        {
+          layer: 'Satellite_2025',
+          opacity: 0,
+        },
+                  {
+          layer: 'Satellite_2023',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 0,
+        },
+                     {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-climate-stabilization',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-potential-corridors',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 0,
+        },
+          {
+          layer: 'admin-0-boundary-disputed',
+          opacity: 0,
+        },  
+         {
+          layer: 'wdpas-2025 color threatend',
+          opacity: 0,
+        },          
       ],
     
     },
@@ -201,7 +242,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Where pipelines meet critical ecosystems',
-      description: "The Global Safety Net is composed of five main layers for protecting biodiversity and climate: Species Rarity Sites, High Biodiversity Areas, Large Mammal Landscapes, Intact Wilderness, and Climate Stabilization Areas. These layers identify and map critical areas of the Earth's terrestrial surface that require intensified conservation efforts to address both biodiversity loss and climate change. Overlaying oil infrastructure with these critical habitats and Indigenous homelands reveals risks of cascading fragmentation.",
+      description: "The Global Safety Net is composed of five main layers for protecting biodiversity and climate: Species Rarity Sites, High Biodiversity Areas, Large Mammal Landscapes, Intact Wilderness, and Climate Stabilization Areas. These are critical areas that require intensified conservation efforts. Overlaying oil infrastructure with these critical habitats and Indigenous homelands reveals risks of cascading fragmentation.",
              legend: [
         {
           title: 'Global Safety Net',
@@ -245,17 +286,22 @@ export default {
         },
       ],
         onChapterExit: [
+                  {
+          layer: 'wdpas-2025 color threatend',
+          opacity: 0,
+        },
       ],
     
     },
     
+
     // chapter 4
     {
       id: 'chapter 4',
       alignment: 'left',
       hidden: false,
       title: 'Protected areas under threat',
-      description: "EACOP’s construction threatens 44 protected areas within Uganda and Tanzania.",
+      description: "In addition to disrupting wildlife corridors and other areas of the Global Safety Net, the EACOP’s construction threatens 44 protected areas within Uganda and Tanzania.",
              legend: [
         {
           title: 'Protected areas',
@@ -303,6 +349,14 @@ export default {
           layer: 'wdpas-2025 color threatend',
           opacity: 1,
         },
+                         {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 0,
+        },
+                     {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0,
+        },
       ],
     
     },
@@ -349,6 +403,10 @@ export default {
           layer: 'wdpas-2025-Murchison',
           opacity: 1,
         },
+                     {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0.2,
+        },
                   {
           layer: 'Satellite_2023',
           opacity: 1,
@@ -357,7 +415,7 @@ export default {
         onChapterExit: [
                  {
           layer: 'Satellite_2025',
-          opacity: 0,
+          opacity: 1,
         },
              {
           layer: 'Pipeline_icons',
@@ -369,8 +427,7 @@ export default {
     
       
     // chapter 6
-
- {
+    {
       id: 'chapter 6',
       alignment: 'left',
       hidden: false,
@@ -401,6 +458,10 @@ export default {
                  {
           layer: 'wdpas-2025-Murchison',
           opacity: 1,
+        },
+                     {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0.2,
         },
                   {
           layer: 'Satellite_2023',
