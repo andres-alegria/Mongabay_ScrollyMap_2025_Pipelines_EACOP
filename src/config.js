@@ -301,6 +301,10 @@ export default {
           layer: 'GSN-large-mammals',
           opacity: 0,
         },
+        {
+          layer: 'wdpas-2025 color threatend',
+          opacity: 1,
+        },
       ],
         onChapterExit: [
       ],
