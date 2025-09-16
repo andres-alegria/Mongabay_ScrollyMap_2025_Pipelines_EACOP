@@ -48,6 +48,7 @@ export default {
           fromLayer: 'Pipelines existing',
         },
       ],
+      sources: 'Global Energy Monitor',
       location: {
         center: [31.5, 1.25],
         zoom: 1.8,
@@ -58,8 +59,8 @@ export default {
         {
           src: 'Photo1.jpg',
           position: 'top',
-          title: 'Pipeline',
-          author: 'Placeholder photo',
+          title: 'Oil/Gas Pipeline',
+          author: 'Wolfgang Weiser',
         },
       ],
       mapAnimation: 'easeTo',
@@ -249,6 +250,7 @@ export default {
           color: '#006a54',
         },
          ],
+      sources: 'The Global Safety Net initiative',
       location: {
         center: [36.0, -2.8],
         zoom: 5.6,
@@ -301,13 +303,14 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Protected areas under threat',
-      description: "In addition to disrupting wildlife corridors and other areas of the Global Safety Net, the construction of the EACOP and its associated feeder pipelines threatens 44 protected areas within Uganda and Tanzania.This is based on a 2 km buffer zone as expected in Total’s Environmental and Social Impact Assessment.",
+      description: "In addition to disrupting wildlife corridors and other areas of the Global Safety Net, the construction of the EACOP and its associated feeder pipelines threatens 44 Protected Areas within Uganda and Tanzania.This is based on a 2 km buffer zone as expected in Total’s Environmental and Social Impact Assessment.",
              legend: [
         {
-          title: 'Protected areas',
+          title: '44 threatened Protected Areas',
           color: '#bdeaaf',
         },
          ],
+       sources: 'Earth Insight',
       location: {
         center: [36.0, -2.8],
         zoom: 5.6,
@@ -384,7 +387,8 @@ export default {
             border: '#c3a7c5',
         },
          ],
-  images: [
+     sources: 'Satellite image from Copernicus',
+     images: [
         {
           src: 'photo2.jpg', 
           position: 'top',
