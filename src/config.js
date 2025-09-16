@@ -245,10 +245,6 @@ export default {
         },
       ],
         onChapterExit: [
-{
-          layer: 'wdpas-2025 color threatend',
-          opacity: 1,
-        },
       ],
     
     },
@@ -301,12 +297,12 @@ export default {
           layer: 'GSN-large-mammals',
           opacity: 0,
         },
-        {
+      ],
+        onChapterExit: [
+            {
           layer: 'wdpas-2025 color threatend',
           opacity: 1,
         },
-      ],
-        onChapterExit: [
       ],
     
     },
