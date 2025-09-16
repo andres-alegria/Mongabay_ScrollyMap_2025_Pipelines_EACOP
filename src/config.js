@@ -147,7 +147,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'EACOP',
-      description: "The East African Crude Oil Pipeline (EACOP), also known as Uganda–Tanzania Crude Oil Pipeline or Hoima–Tanga Port Oil Pipeline, is a proposed oil pipeline in East Africa.",
+      description: "The East African Crude Oil Pipeline (EACOP), also known as Uganda–Tanzania Crude Oil Pipeline or Hoima–Tanga Port Oil Pipeline, is a 1,443 km crude oil pipeline under construction in East Africa. Additional pipelines will feed into the main EACOP pipeline.",
              legend: [
         {
           title: 'Existing pipelines',
@@ -301,7 +301,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Protected areas under threat',
-      description: "In addition to disrupting wildlife corridors and other areas of the Global Safety Net, the EACOP’s construction threatens 44 protected areas within Uganda and Tanzania.",
+      description: "In addition to disrupting wildlife corridors and other areas of the Global Safety Net, the construction of the EACOP and its associated feeder pipelines threatens 44 protected areas within Uganda and Tanzania.This is based on a 2 km buffer zone as expected in Total’s Environmental and Social Impact Assessment.",
              legend: [
         {
           title: 'Protected areas',
@@ -355,6 +355,14 @@ export default {
         },
                      {
           layer: 'wdpas-2025-Murchison fill',
+          opacity: 0,
+        },
+                {
+          layer: 'Satellite_2025',
+          opacity: 0,
+        },
+                  {
+          layer: 'Satellite_2023',
           opacity: 0,
         },
       ],
