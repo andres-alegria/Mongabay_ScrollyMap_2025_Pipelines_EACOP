@@ -8,8 +8,8 @@ export default {
   intro: {
     title: 'Clearing the Way',
     subtitle:
-      'Nearly 40% of the EACOP route is already carved through forests and villages despite community opposition.',
-    date: 'Sept. 16 2025',
+      'Hundreds of kilometers of the controversial East African Crude Oil Pipeline have been cleared or constructed, according to satellite data.',
+    date: 'Sept. 18 2025',
     social: [
       {
         name: 'twitter',
@@ -32,7 +32,7 @@ export default {
     },
   ],
   alignment: 'left',
-  footer: 'Cartography by Andrés Alegría for Mongabay.',
+  footer: 'Cartography by Andrés Alegría | Edited by Terna Gyuse',
   chapters: [
 
     // chapter 1
@@ -41,7 +41,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Through the Safety Net',
-      description: "Oil pipeline expansion is putting the planet’s last biodiversity strongholds—and many Indigenous lands—at risk.",
+      description: "New oil pipelines are putting some of the planet’s last biodiversity strongholds—and many Indigenous lands—at risk.",
        legend: [
         {
           title: 'Global network of oil/gas pipelines',
@@ -60,7 +60,7 @@ export default {
           src: 'Photo1.jpg',
           position: 'top',
           title: 'Oil/Gas Pipeline',
-          author: 'Wolfgang Weiser',
+          author: 'R. Naik',
         },
       ],
       mapAnimation: 'easeTo',
@@ -148,7 +148,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'EACOP',
-      description: "The East African Crude Oil Pipeline (EACOP), also known as Uganda–Tanzania Crude Oil Pipeline or Hoima–Tanga Port Oil Pipeline, is a 1,443 km crude oil pipeline under construction in East Africa. Additional pipelines will feed into the main EACOP pipeline.",
+      description: "EACOP The East African Crude Oil Pipeline (EACOP) will run 1,443 km from Uganda's newly-developed oil fields on Lake Albert to the Tanzanian port of Tanga.",
              legend: [
         {
           title: 'Existing pipelines',
@@ -243,16 +243,16 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Where pipelines meet critical ecosystems',
-      description: "The Global Safety Net is composed of five main layers for protecting biodiversity and climate: Species Rarity Sites, High Biodiversity Areas, Large Mammal Landscapes, Intact Wilderness, and Climate Stabilization Areas. These are critical areas that require intensified conservation efforts. Overlaying oil infrastructure with these critical habitats and Indigenous homelands reveals risks of cascading fragmentation.",
+      description: "Construction and operation of oil infrastructure risks irreversible damage to critical wildlife habitat, water bodies, and farmland.The pipeline and its 2 km buffer zone are impacting on TK hundreds of communities and dozens of formal protected areas, starting with the wellheads and feeder lines in and around Murchison Falls National Park.",
              legend: [
         {
-          title: 'Global Safety Net',
+          title: 'Critical areas based on the GSN',
           color: '#006a54',
         },
          ],
-      sources: 'The Global Safety Net initiative',
+      sources: 'The Global Safety Net initiative (GSN)',
       location: {
-        center: [36.0, -2.8],
+        center: [31.506, -1.5],
         zoom: 5.6,
         pitch: 0.0,
         bearing: 0,
@@ -303,7 +303,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Protected areas under threat',
-      description: "In addition to disrupting wildlife corridors and other areas of the Global Safety Net, the construction of the EACOP and its associated feeder pipelines threatens 44 Protected Areas within Uganda and Tanzania.This is based on a 2 km buffer zone as expected in Total’s Environmental and Social Impact Assessment.",
+      description: "Campaigners have reported disturbances to elephants and other wildlife in the park, and raised fears over a pipeline crossing the Nile River in a Ramsar-listed wetland that is a refuge for endangered species like the shoebill stork. By July 2025, nine wellpads and 38 km of roads TK had been constructed in the park.",
              legend: [
         {
           title: '44 threatened Protected Areas',
@@ -312,7 +312,7 @@ export default {
          ],
        sources: 'Earth Insight',
       location: {
-        center: [36.0, -2.8],
+        center: [31.506, -1.5],
         zoom: 5.6,
         pitch: 0.0,
         bearing: 0,
@@ -379,7 +379,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'National Treasure',
-      description: "Murchison Falls National Park is Uganda's oldest and largest national park, home to elephants, lions, giraffes, and numerous endemic species.",
+      description: "TK ## of tourists visit Murchison Falls National Park, Uganda's oldest and largest protected area, every year to see elephants, lions, giraffes, and numerous endemic species, generating TK $$$ for the government and nearby communities.",
              legend: [
         {
           title: 'Murchison Falls National Park',
@@ -392,12 +392,12 @@ export default {
         {
           src: 'photo2.jpg', 
           position: 'top',
-          title: 'Rothschild-Giraffes',
-          author: 'Murchison Falls',
+          title: 'Shoebill storks',
+          author: 'K. Marino',
         },
       ],         
       location: {
-        center: [31.506, 2.166],
+        center: [31.45, 2.175],
         zoom: 10.75,
         pitch: 0.0,
         bearing: 0,
@@ -444,7 +444,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Tracks inside',
-      description: "By July 2025, 38 kilometers of roads and nine well pads have been cleared or constructed inside Murchison Falls National Park.",
+      description: "Earth Insight matched EACOP with maps of key biodiversity areas, and rivers and found the pipeline’s route and 2 km buffer will impinge on 44 protected areas. An accident near any of these here could be catastrophic; the improved access that construction provides could accelerate degradation.",
            legend: [
         {
           title: 'Tilenga Feeder Pipeline Trajectory',
@@ -453,7 +453,7 @@ export default {
          ],
       sources: 'Satellite image from Copernicus',
       location: {
-        center: [31.506, 2.166],
+        center: [31.45, 2.175],
         zoom: 10.75,
         pitch: 0.0,
         bearing: 0,
@@ -495,6 +495,83 @@ export default {
        
    
    
+      
+    // chapter 7
+    {
+      id: 'chapter 7',
+      alignment: 'left',
+      hidden: false,
+      title: 'Unnecessary risk',
+      description: "This East African pipeline dispossesses thousands of people, threatens vital water supplies, and puts sensitive ecosystems at risk to transport polluting fossil fuels which a world already set to fail to keep global warming below 1.5 degrees can not afford to use.",
+      location: {
+        center: [31.506, -1.5],
+        zoom: 5.6,
+        pitch: 0.0,
+        bearing: 0,
+      },
+     
+      mapAnimation: 'easeTo',
+      rotateAnimation: false,
+      callback: '',
+      onChapterEnter: [
+        {
+          layer: 'Pipeline_icons',
+          opacity: 0,
+        },
+        {
+          layer: 'Satellite_2025',
+          opacity: 0,
+        },
+                  {
+          layer: 'Satellite_2023',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025-Murchison',
+          opacity: 0,
+        },
+               {
+          layer: 'wdpas-2025-Murchison fill',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-climate-stabilization',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-potential-corridors',
+          opacity: 0,
+        },
+        {
+          layer: 'wdpas-2025',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-intact-wilderness-areas',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-high-biodiversity',
+          opacity: 0,
+        },
+        {
+          layer: 'GSN-large-mammals',
+          opacity: 0,
+        },
+          {
+          layer: 'admin-0-boundary-disputed',
+          opacity: 0,
+        },  
+         {
+          layer: 'wdpas-2025 color threatend',
+          opacity: 0,
+        },
+      ],
+        onChapterExit: [
+      ],
+    },
+       
+       
    
 
   ],
