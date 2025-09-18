@@ -502,7 +502,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Unnecessary risk',
-      description: "This East African pipeline dispossesses thousands of people, threatens vital water supplies, and puts sensitive ecosystems at risk — to transport a polluting fuel which a world already set to fail to keep global warming below 1.5 degrees can not afford to use.",
+      description: "This East African pipeline dispossesses thousands of people, threatens vital water supplies, and puts sensitive ecosystems at risk — its carbon footprint will be 25 times the combined annual emissions of Tanzania and Uganda.",
       location: {
         center: [31.506, -1.5],
         zoom: 5.6,
