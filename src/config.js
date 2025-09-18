@@ -311,6 +311,14 @@ export default {
         },
          ],
        sources: 'Earth Insight',
+     images: [
+        {
+          src: 'photo2.jpg', 
+          position: 'top',
+          title: 'Shoebill storks',
+          author: 'K. Marino',
+        },
+      ],  
       location: {
         center: [31.506, -1.5],
         zoom: 5.6,
@@ -387,15 +395,7 @@ export default {
             border: '#c3a7c5',
         },
          ],
-     sources: 'Satellite image from Copernicus',
-     images: [
-        {
-          src: 'photo2.jpg', 
-          position: 'top',
-          title: 'Shoebill storks',
-          author: 'K. Marino',
-        },
-      ],         
+     sources: 'Satellite image from Copernicus',       
       location: {
         center: [31.45, 2.175],
         zoom: 10.75,
