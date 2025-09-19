@@ -176,7 +176,13 @@ function Chapter({
         {title && (
           <div className="text-base leading-6">
             {title && <h3 className="font-lora text-2xl leading-8 pb-4">{t(title)}</h3>}
-            {description && <p className="text-base leading-6">{t(description)}</p>}
+
+{description && (
+  <p
+    className="text-base leading-6"
+    dangerouslySetInnerHTML={{ __html: t(description) }}
+  />
+)}
           </div>
         )}
         {legend && renderLegend(legend, sources)}

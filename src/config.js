@@ -303,7 +303,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Protected areas under threat',
-      description: "By July 2025, nine wellpads and 38 km (23.6 mi) of roads had been constructed in the park. Campaigners have reported disturbances to elephants and other wildlife in the park and raised fears over a pipeline crossing the Nile River in a Ramsar-listed wetland that is a refuge for endangered species like the shoebill stork (Balaeniceps rex).",
+      description: "By July 2025, nine wellpads and 38 km (23.6 mi) of roads had been constructed in the park. Campaigners have reported disturbances to elephants and other wildlife in the park and raised fears over a pipeline crossing the Nile River in a Ramsar-listed wetland that is a refuge for endangered species like the shoebill stork (<i>Balaeniceps rex</i>).",
              legend: [
         {
           title: 'Protected areas affected by EACOP',
