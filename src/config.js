@@ -8,7 +8,7 @@ export default {
   intro: {
     title: 'Clearing the Way',
     subtitle:
-      'Satellite data shows that hundreds of square kilometers of bush and farmland have been cleared along the route of the controversial East African Crude Oil Pipeline.',
+      'Satellite data show that hundreds of square kilometers of bush and farmland have been cleared along the route of the controversial East African Crude Oil Pipeline.',
     date: 'Sept. 18 2025',
     social: [
       {
@@ -41,7 +41,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Weaving a dangerous web',
-      description: "New oil pipelines are putting some of the planet’s last biodiversity strongholds—and many Indigenous lands—at risk.",
+      description: "New oil pipelines are putting some of the planet’s last biodiversity strongholds — and many Indigenous lands — at risk.",
        legend: [
         {
           title: 'Global network of oil/gas pipelines',
@@ -148,7 +148,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'EACOP',
-      description: "The East African Crude Oil Pipeline (EACOP) will run 1,443 km from Uganda's newly-developed oil fields on Lake Albert to the Tanzanian port of Tanga.",
+      description: "The East African Crude Oil Pipeline (EACOP) will run 1,443 kilometers (897 miles) from Uganda's newly developed oil fields on Lake Albert to the Tanzanian port of Tanga.",
              legend: [
         {
           title: 'Existing pipelines',
@@ -243,7 +243,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Where pipelines meet critical ecosystems',
-      description: "Construction and operation of oil infrastructure risks irreversible damage to critical wildlife habitat, water bodies, and farmland.The pipeline and its 2 km buffer zone are impacting on over 100,000 people and dozens of formal protected areas, starting with the wellheads and feeder lines in and around Murchison Falls National Park.",
+      description: "Construction and operation of oil infrastructure risks irreversible damage to critical wildlife habitat, water bodies and farmland.The pipeline and its 2-km (1.2-mi) buffer zone are impacting more than 100,000 people and dozens of formal protected areas, starting with the wellheads and feeder lines in and around Murchison Falls National Park.",
              legend: [
         {
           title: 'Critical areas based on the Global Safety Net Initiative (GSN)',
@@ -303,10 +303,10 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Protected areas under threat',
-      description: "By July 2025, nine wellpads and 38 km of roads had been constructed in the park. Campaigners have reported disturbances to elephants and other wildlife in the park, and raised fears over a pipeline crossing the Nile River in a Ramsar-listed wetland that is a refuge for endangered species like the shoebill stork.",
+      description: "By July 2025, nine wellpads and 38 km (23.6 mi) of roads had been constructed in the park. Campaigners have reported disturbances to elephants and other wildlife in the park and raised fears over a pipeline crossing the Nile River in a Ramsar-listed wetland that is a refuge for endangered species like the shoebill stork (Balaeniceps rex).",
              legend: [
         {
-          title: 'Protected areas affected by EACOP.',
+          title: 'Protected areas affected by EACOP',
           color: '#bdeaaf',
         },
          ],
@@ -387,7 +387,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'National treasure',
-      description: "Every year, well over 100,000 tourists visit Murchison Falls National Park, Uganda's oldest and largest protected area, every year to see elephants, lions, giraffes, and numerous endemic species, generating income for the government and nearby communities.",
+      description: "Every year, more than 100,000 tourists visit Murchison Falls National Park, Uganda's oldest and largest protected area, to see elephants, lions, giraffes and numerous endemic species, generating income for the government and nearby communities.",
              legend: [
         {
           title: 'Murchison Falls National Park',
@@ -444,7 +444,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Worrying footprint',
-      description: "Earth Insight matched EACOP with maps of key biodiversity areas, and rivers and found the pipeline’s route and 2 km buffer will impinge on 44 protected areas. An accident near any of these here could be catastrophic; the improved access that construction provides could accelerate degradation.",
+      description: "Unnecessary risk.",
            legend: [
         {
           title: 'Tilenga Feeder Pipeline Trajectory',
@@ -502,7 +502,7 @@ export default {
       alignment: 'left',
       hidden: false,
       title: 'Unnecessary risk',
-      description: "This East African pipeline dispossesses thousands of people, threatens vital water supplies, and puts sensitive ecosystems at risk — its carbon footprint will be 25 times the combined annual emissions of Tanzania and Uganda.",
+      description: "Description: This East African pipeline dispossesses thousands of people, threatens vital water supplies and puts sensitive ecosystems at risk — its carbon footprint will be 25 times the combined annual emissions of Tanzania and Uganda.",
       location: {
         center: [31.506, -1.5],
         zoom: 5.6,
