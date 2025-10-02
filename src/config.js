@@ -12,8 +12,8 @@ export default {
     date: 'Sept. 18 2025',
     social: [
       {
-        name: 'twitter',
-        src: 'twitter.svg',
+        name: 'x',
+        src: 'x.svg',
         href: 'https://x.com/Mongabay',
       },
       {
